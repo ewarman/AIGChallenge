@@ -5,29 +5,45 @@
 </head>
 
 <body>
-	<p>Welcome to your profile!</p>
-	<div id="buttons">
-		<button type="button">Add Document</button>
-		<button type="button">What Should I Add?</button>
+	<div id="header">
+		<button type="button" id="about" onclick=window.location.href="mission.html">About our Project</button>
+		<p>Welcome to your Legacy.</p>
+		<div id="buttons">
+			<button type="button" id="ad">Add Document</button>
+			<button type="button" id="wta">What Should I Add?</button>
+		</div>
+	</div>
+	<div id="tableTitle">
+		<p>My Documents</p>
 	</div>
 	<div id="table">
 		<table>
 			<tr>
-				<th></th>
 			 	<th>Document Name</th>
 				<th>Last Modified</th>
 			</tr>
 			<tr>
-				<td><button type="button">Remove</button></td>
 				<td><a href=birthcertificate.jpg>Birth Certificate</a></td>
 				<td>4/2/16</td> 
 			</tr>
 			<tr>
-				<td><button type="button">Remove</button></td>
-				<td>will.pdf</td>
+				<td><a href=will.jpg>Will</a></td>
 				<td>4/8/16</td> 
 			</tr>
 		</table>
 	</div>
+	<div id="WhatToAdd" class="modal">
+		<div class="modal-content">
+    	<span class="close">x</span>
+    	<p>Here are some ideas for what you can put into your Legacy:</p>
+ 		</div>
+	</div>
+		<div id="AddDocument" class="modal">
+		<div class="modal-content">
+    	<span class="close2">x</span>
+    	<p>Users can add custom documents or fill out a basic information questionaire to get started with Legacy.</p>
+ 		</div>
+	</div>
 </body>
+<script type="text/javascript" src="profile.js"></script>
 </html>
